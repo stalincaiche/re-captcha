@@ -25,8 +25,8 @@ function verificarReCaptcha()
     var response = grecaptcha.getResponse();
 
     if(response.length == 0){
-        return false;
+        return false;  // no esta seleccionado
     } else {
-        return true;
+        return true;   // está seleccionado
     }
 }
